@@ -14,6 +14,9 @@ def set_bg_page(png_file):
     bin_str = get_base64_of_binfile(png_file)
     page_bg_img = '''
     <style>
+    .st-emotion-cache-l9bjmx p{
+    color:red;
+    }
     .stApp {
     background-image: url("data:image/png;base64,%s");
     background-size: cover;
@@ -43,7 +46,7 @@ hours = {i: f'{i}:00 - {i+1}:00' for i in range(24)}
 hour_categories = {0: 'Late Night (12am-6am)', 1: 'Morning (6am-12pm)', 2: 'Afternoon (12pm-6pm)', 3: 'Evening (6pm-12am)'}
 arrest = {0: 'No', 1: 'Yes'}
 domestic = {0: 'No', 1: 'Yes'}
-beats = {1: 'Beat 1', 2: 'Beat 2', 3: 'Beat 3'}  # Add more beats as needed
+beats = {1: 'Beat 1', 2: 'Beat 2', 3: 'Beat 3'}  
 years = {2012: 2012, 2013: 2013, 2014: 2014, 2015: 2015, 2016: 2016, 2017: 2017, 2018: 2018, 2019: 2019, 2020: 2020, 2021: 2021}
 
 # Dropdown widgets for each feature
